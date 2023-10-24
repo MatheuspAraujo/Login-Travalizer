@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;300;400&family=Montserrat:wght@100;200;300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-background: #355B3E;
+    --green-text: #355B3E;
+    --green-label-input: #355B3E;
+    --green-input-border: #B8D6BF;
+    --green-button: #029664;
+    --white-section: #FFFFFF;
+    --beige-image: #F5DBC4;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--green-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login .login-image{
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.login .section {
+    background-color: var(--white-section);
+    padding: 20px 40px 20px 40px;
+}
+
+.login .section .logo {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.login .section .logo h2 {
+    color: var(--green-text);
+    margin-left: 20px;
+    padding-top: 4px;
+}
+
+
+
+.logo-mobile {
+    display: none;
+}
+
+.mobile-image {
+    display: none;
+}
+
+
+
+
+
+
+.login .section .text {
+    color: var(--green-text);
+}
+
+.login .section .text p {
+    font-size: 0.8rem;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.login .section .email-password  label{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.login .section .email-password input {
+    border: 1px solid var(--green-input-border);
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: var(--green-text);
+}
+
+.login .section .email-password .password {
+    display: flex;
+}
+
+.login .section .email-password .password .icon-password {
+    position: absolute;
+    left: 650px; 
+    top: 56.5%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+
+
+
+
+.login .section .remember {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--green-text);
+    font-size: 0.8rem;
+}
+
+.login .section .remember a{
+    margin-left: 280px;
+    color: var(--green-text);
+}
+
+
+
+
+
+
+.login .section .button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.login .section .button .checked{
+    width: 50%;
+    background-color: var(--green-button);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.login .section .button .button-2{
+    width: 50%;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: white;
+    color: var(--green-button);
+    border: 1px solid var(--green-button);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.login .section .login-with {
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.login .section .login-with p{
+    color: var(--green-text);
+}
+
+.login .section .login-with a{
+    font-weight: 600;
+    color: var(--green-text);
+    margin-left: 13px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.login .login-image .image {
+    background-color: var(--beige-image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .login-image .image img{
+    width: 70%;
+}
+
+
+
+
+
+
+
+@media (width < 900px) {
+    .login .login-image .image{
+        display: none;
+    }
+    .icon-password {
+        display: none;
+    }
+}
+
+@media (width < 600px) {
+    .login .section .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--green-background);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .login .section{
+        padding: 0;
+    }
+
+    .login .section .mobile-configuration{
+        padding: 25px;
+    }
+
+    .login .section .logo{
+        background-color: var(--green-background);
+        margin-bottom: 0;
+    }
+    .mobile-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--beige-image);
+        width: 100%;
+    }
+
+    .mobile-image img{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .login .login-image{
+        border-radius: 0;
+    }
+
+    .login .login-image .image{
+        display: none;
+    }
+    .section{
+        height: 100vh;
+    }
+
+    .login .section .remember a{
+        margin-left: 230px;
+    }
+}
+
